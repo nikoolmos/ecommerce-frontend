@@ -1,6 +1,7 @@
 'use server';
+import { API_URL } from '../utils/constants'
 
-const baseUrl = process.env.BASE_URL;
+const baseUrl = API_URL;
 
 export async function getAllProducts() {
     const url = `${baseUrl}/product`;
