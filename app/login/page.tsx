@@ -1,3 +1,4 @@
+'use client';
 import { useCallback } from "react";
 import RegisterForm, { LoginValues } from "./layout/loginForm";
 import { useLoginController } from "./useLoginController";

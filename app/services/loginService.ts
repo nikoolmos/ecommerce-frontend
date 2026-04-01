@@ -1,20 +1,22 @@
 'use server';
 import { API_URL } from "../utils/constants";
 
-export class LoginService {
-
-    public static async login() {
+export async function login(email: string, password: string) {
         const endpoint = `${API_URL}/auth/login`;
-        
+
         try {
             const result = await globalThis.fetch(endpoint, {
-                method: 'POST'
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, password })
             });
-            
-            return result;
-        } catch(error) {
+
+            return await result.json();
+
+        } catch (error) {
             throw new Error('Cant Login User');
         }
     }
 
-};
