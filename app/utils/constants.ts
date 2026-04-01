@@ -1,1 +1,1 @@
-export const API_URL = 'http://localhost:3000';
+export const API_URL = 'https://main.d14w9laaklitu4.amplifyapp.com:3000';
