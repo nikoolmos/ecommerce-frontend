@@ -1,1 +1,1 @@
-export const API_URL = 'https://main.d14w9laaklitu4.amplifyapp.com:3000';
+export const API_URL = 'http://ec2-13-220-111-58.compute-1.amazonaws.com:3000';
